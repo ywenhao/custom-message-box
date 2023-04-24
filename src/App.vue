@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BasicMessageBox from './components/BasicMessageBox.vue'
+import ChildCom from './components/ChildCom.vue'
 import { useCreateMessageBox } from './hooks/useMessageBox'
 
 useCreateMessageBox()
@@ -13,6 +14,7 @@ useCreateMessageBox()
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <ChildCom />
     <BasicMessageBox />
   </div>
 </template>

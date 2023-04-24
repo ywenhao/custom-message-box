@@ -68,7 +68,7 @@ export function useCreateMessageBox() {
   }
 
   let submitCache: null | (() => void) = null
-  let closeTimer: null | number = null
+  let closeTimer: null | NodeJS.Timeout = null
 
   const setMessageBox = (value: Partial<CustomMessageBox>) => {
     Object.assign(state, value)
